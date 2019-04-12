@@ -1,0 +1,1114 @@
+
+<!-- saved from url=(0053)http://www.evlm.stuba.sk/databasemenu/Geometry/solid4 -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 11">
+<meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="http://www.evlm.stuba.sk/databasemenu/Geometry/solid4.files/filelist.xml">
+<link rel="Edit-Time-Data" href="http://www.evlm.stuba.sk/databasemenu/Geometry/solid4.files/editdata.mso">
+<link rel="OLE-Object-Data" href="http://www.evlm.stuba.sk/databasemenu/Geometry/solid4.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>MODELLING OF SOLID INTERIOR</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Velichova</o:Author>
+  <o:LastAuthor>Daniela</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:LastPrinted>2002-09-23T09:35:00Z</o:LastPrinted>
+  <o:Created>2008-10-27T07:39:00Z</o:Created>
+  <o:LastSaved>2008-10-27T07:39:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1309</o:Words>
+  <o:Characters>7467</o:Characters>
+  <o:Company>Katedra Matematiky</o:Company>
+  <o:Lines>62</o:Lines>
+  <o:Paragraphs>17</o:Paragraphs>
+  <o:CharactersWithSpaces>8759</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:DoNotHyphenateCaps/>
+  <w:DrawingGridHorizontalSpacing>0 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>0 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DrawingGridHorizontalOrigin>0 pt</w:DrawingGridHorizontalOrigin>
+  <w:DrawingGridVerticalOrigin>0 pt</w:DrawingGridVerticalOrigin>
+  <w:DoNotShadeFormData/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-GB;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-GB;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:EN-GB;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.WPBullets, li.WPBullets, div.WPBullets
+	{mso-style-name:"WP Bullets";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel9, li.SeqLevel9, div.SeqLevel9
+	{mso-style-name:"Seq Level 9";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:162.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel8, li.SeqLevel8, div.SeqLevel8
+	{mso-style-name:"Seq Level 8";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:144.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel7, li.SeqLevel7, div.SeqLevel7
+	{mso-style-name:"Seq Level 7";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:126.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel6, li.SeqLevel6, div.SeqLevel6
+	{mso-style-name:"Seq Level 6";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:108.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel5, li.SeqLevel5, div.SeqLevel5
+	{mso-style-name:"Seq Level 5";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:90.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel4, li.SeqLevel4, div.SeqLevel4
+	{mso-style-name:"Seq Level 4";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel3, li.SeqLevel3, div.SeqLevel3
+	{mso-style-name:"Seq Level 3";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:54.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel2, li.SeqLevel2, div.SeqLevel2
+	{mso-style-name:"Seq Level 2";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.SeqLevel1, li.SeqLevel1, div.SeqLevel1
+	{mso-style-name:"Seq Level 1";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.dka, li.dka, div.dka
+	{mso-style-name:\00D8ádka;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.Znaka, li.Znaka, div.Znaka
+	{mso-style-name:Zna\00E8ka;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:14.4pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.Znaka1, li.Znaka1, div.Znaka1
+	{mso-style-name:"Zna\00E8ka 1";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:28.8pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.sloseznamu, li.sloseznamu, div.sloseznamu
+	{mso-style-name:"\00C8íslo seznamu";
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+p.Podnadpis, li.Podnadpis, div.Podnadpis
+	{mso-style-name:Podnadpis;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	font-size:18.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Nadpis, li.Nadpis, div.Nadpis
+	{mso-style-name:Nadpis;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:none;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+p.Pata, li.Pata, div.Pata
+	{mso-style-name:Pata;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:CS;
+	mso-fareast-language:CS;
+	layout-grid-mode:line;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normálna tabuľka";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang="SK" link="blue" vlink="purple" style="tab-interval:36.0pt">
+
+<div class="Section1">
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:16.0pt;
+mso-bidi-font-size:10.0pt;mso-ansi-language:EN-GB">Free-Form Deformations of
+Solid Cells<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><b style="mso-bidi-font-weight:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">1. Introduction</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Solid cell <i style="mso-bidi-font-style:normal">T</i> is a non-empty subset of the <span class="SpellE">projectively</span> extended Euclidean space over the real numbers
+</span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">&#165;</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">E<sup>3</sup> that is the image of a
+simply connected region </span><span lang="EN-GB" style="font-family:Symbol;
+mso-ansi-language:EN-GB">W = </span><span lang="EN-US" style="mso-ansi-language:
+EN-US">&lt;0, 1&gt;</span><i style="mso-bidi-font-style:normal"><sup><span lang="EN-US" style="mso-ansi-language:EN-GB"> </span></sup></i><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">&#204;</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> R<sup>3</sup> under a locally
+homeomorphic mapping analytically represented by the point function<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="font-size:8.0pt;mso-bidi-font-size:10.0pt;
+mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><b style="mso-bidi-font-weight:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">s</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB">(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>)</span><span lang="EN-GB" style="font-family:
+Symbol;mso-ansi-language:EN-GB"> =</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"> (<i style="mso-bidi-font-style:normal">x</i>(<i style="mso-bidi-font-style:
+normal">u<span class="SpellE"><sup>i</sup></span></i>), <i style="mso-bidi-font-style:
+normal">y</i>(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>),
+<i style="mso-bidi-font-style:normal">z</i>(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>), <i style="mso-bidi-font-style:normal">h</i>(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>)),<span style="mso-spacerun:yes">  </span>for<span style="mso-spacerun:yes">  </span><span class="SpellE"><i style="mso-bidi-font-style:normal">i</i></span><i style="mso-bidi-font-style:normal"> </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">1, 2, 3.<span style="mso-spacerun:yes"> 
+</span><o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:8.0pt;
+mso-bidi-font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Separate
+components <i style="mso-bidi-font-style:normal">x</i>(<i style="mso-bidi-font-style:
+normal">u<span class="SpellE"><sup>i</sup></span></i>), <i style="mso-bidi-font-style:
+normal">y</i>(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>),
+<i style="mso-bidi-font-style:normal">z</i>(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>), <i style="mso-bidi-font-style:normal">h</i>(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>)
+are homogeneous co-ordinate functions in three real variables differentiable on
+</span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">W</span><span lang="EN-GB" style="mso-ansi-language:EN-GB">, <i style="mso-bidi-font-style:
+normal">h</i>(<i style="mso-bidi-font-style:normal">u<span class="SpellE"><sup>i</sup></span></i>)
+</span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">0 for ideal solid cell points, for
+real points <i style="mso-bidi-font-style:normal">h</i>(<i style="mso-bidi-font-style:
+normal">u<span class="SpellE"><sup>i</sup></span></i>) </span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">1 in the normalised form. Numbers (<i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>,
+<i style="mso-bidi-font-style:normal">c</i>) </span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">Î W</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> are curvilinear co-ordinates of point <span class="GramE"><i style="mso-bidi-font-style:normal">P</i>(</span><i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>,
+<i style="mso-bidi-font-style:normal">c</i>) located in solid cell. Net of <span class="SpellE">iso</span>-parametric surface patches in the solid cell is
+composed from three systems of <span class="SpellE">iso</span>-parametric surface
+patches, which are determined for one constant value of parameters <i style="mso-bidi-font-style:normal">u</i><sup>1</sup><sub> </sub></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">a</span></i><span lang="EN-GB" style="mso-ansi-language:EN-GB">, or<i style="mso-bidi-font-style:normal"> u</i><sup>2</sup><sub> </sub></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">b</span></i><span lang="EN-GB" style="mso-ansi-language:EN-GB">, o<i style="mso-bidi-font-style:normal">r u</i><sup>3</sup><sub> </sub></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">c</span></i><span lang="EN-GB" style="mso-ansi-language:EN-GB">, and they
+are represented by point functions in two variables s(<i style="mso-bidi-font-style:
+normal">u</i><sup>1</sup>,<i style="mso-bidi-font-style:normal"> u</i><sup>2</sup>,<i style="mso-bidi-font-style:normal"> c</i>), s(<i style="mso-bidi-font-style:
+normal">a</i>,<i style="mso-bidi-font-style:normal"> u</i><sup>2</sup>,<i style="mso-bidi-font-style:normal"> u</i><sup>3</sup>)<i style="mso-bidi-font-style:
+normal">, </i>s(<i style="mso-bidi-font-style:normal">u</i><sup>1</sup>,<i style="mso-bidi-font-style:normal"> b</i>,<i style="mso-bidi-font-style:normal">
+u</i><sup>3</sup>), for (<i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>, <i style="mso-bidi-font-style:normal">c</i>)
+</span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">Î W.</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> All three <span class="SpellE">iso</span>-parametric
+surface patches meet in the solid cell point <i style="mso-bidi-font-style:
+normal">P </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">s(<i style="mso-bidi-font-style:normal">a</i>,<i style="mso-bidi-font-style:normal">
+b</i>,<i style="mso-bidi-font-style:normal"> c</i>), and any two of them
+intersect in the solid cell <span class="SpellE">iso</span>-parametric curve
+segment. <span class="SpellE">Iso</span>-parametric curve segments, all passing
+through their common regular point <i style="mso-bidi-font-style:normal">P </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">s(<i style="mso-bidi-font-style:
+normal">a</i>,<i style="mso-bidi-font-style:normal"> b</i>,<i style="mso-bidi-font-style:
+normal"> c</i>) are</span><span lang="EN-GB" style="font-family:Symbol;
+mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">represented by the point functions in one variable <b style="mso-bidi-font-weight:
+normal">s</b>(<i style="mso-bidi-font-style:normal">u</i><sup>1</sup>,<i style="mso-bidi-font-style:normal"> b</i>,<i style="mso-bidi-font-style:normal">
+c</i>),<i style="mso-bidi-font-style:normal"> </i><b style="mso-bidi-font-weight:
+normal">s</b>(<i style="mso-bidi-font-style:normal">a</i>,<i style="mso-bidi-font-style:
+normal"> u</i><sup>2</sup>,<i style="mso-bidi-font-style:normal"> c</i>),<i style="mso-bidi-font-style:normal"> </i><b style="mso-bidi-font-weight:normal">s</b>(<i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>,
+<i style="mso-bidi-font-style:normal">u</i><sup>3</sup>), while (<i style="mso-bidi-font-style:normal">u</i><sup>1</sup>,</span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB"> </span><i style="mso-bidi-font-style:
+normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">u</span></i><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">2</span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">,</span><span lang="EN-GB" style="font-family:
+Symbol;mso-ansi-language:EN-GB"> </span><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">u</span></i><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">3</span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">) </span><span lang="EN-GB" style="font-family:
+Symbol;mso-ansi-language:EN-GB">Î W.</span><span lang="EN-GB" style="font-size:
+14.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Point <i style="mso-bidi-font-style:normal">P </i></span><span lang="EN-GB" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-ansi-language:EN-GB">= </span><b style="mso-bidi-font-weight:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">s</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB">(<i style="mso-bidi-font-style:normal">a, b</i>,
+<i style="mso-bidi-font-style:normal">c</i>), for (<i style="mso-bidi-font-style:
+normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>, <i style="mso-bidi-font-style:normal">c</i>) </span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">Î W</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> is the regular point of the solid cell, when
+all three partial derivatives of the solid cell point function with respect to
+the particular variables <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="font-size:8.0pt;mso-bidi-font-size:10.0pt;
+mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><sub><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:198.75pt;
+ height:33pt' o:ole="" fillcolor="window">
+ <v:imagedata src="solid4.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img width="265" height="44" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image002.gif" v:shapes="_x0000_i1025"><!--[endif]--></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1286601972">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span class="GramE"><span lang="EN-GB" style="mso-ansi-language:EN-GB">determine</span></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> linearly independent vectors <span class="SpellE"><b style="mso-bidi-font-weight:normal">s</b><i style="mso-bidi-font-style:
+normal"><sub>i</sub></i></span>(<i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>, <i style="mso-bidi-font-style:normal">c</i>),<i style="mso-bidi-font-style:normal"> <span class="SpellE">i</span> </i></span><span lang="EN-GB" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-ansi-language:EN-GB">=</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">1, 2, 3, which are tangent vectors to the solid</span><span lang="EN-GB" style="font-size:14.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:EN-GB"> </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">cell <span class="SpellE">iso</span>-parametric
+curve segments.<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">In the solid
+cell regular point <i style="mso-bidi-font-style:normal">P </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><span class="GramE"><b style="mso-bidi-font-weight:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">s</span></b><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">(</span></span><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">a, b</span></i><span lang="EN-GB" style="mso-ansi-language:EN-GB">, <i style="mso-bidi-font-style:normal">c</i>),
+(<i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:
+normal">b</i>, <i style="mso-bidi-font-style:normal">c</i>) </span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">Î W,</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> the tangent trihedron is uniquely
+determined and it describes solid intrinsic geometric properties. Vertex of the
+tangent trihedron is the regular point<i style="mso-bidi-font-style:normal"> P</i>.
+Edges are semi-lines determined by the point <i style="mso-bidi-font-style:
+normal">P</i> and three direction vectors <span class="SpellE"><span class="GramE"><b style="mso-bidi-font-weight:normal">s</b><i style="mso-bidi-font-style:normal"><sub>i</sub></i></span></span><span class="GramE">(</span><i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>, <i style="mso-bidi-font-style:normal">c</i>),
+<span class="SpellE"><i style="mso-bidi-font-style:normal">i</i></span><i style="mso-bidi-font-style:normal"> </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">1, 2, 3 in the tangent vectors to the solid
+cell <span class="SpellE">iso</span>-parametric curve segments located in the
+point <i style="mso-bidi-font-style:normal">P</i>. Faces of the trihedron are
+parts of three tangent planes to the solid <span class="SpellE">iso</span>-parametric
+surface patches sharing the common regular point <i style="mso-bidi-font-style:
+normal">P </i><sup><span style="mso-spacerun:yes"> </span></sup>(Fig. 1)<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-top:12.0pt;margin-right:0cm;
+margin-bottom:12.0pt;margin-left:0cm;text-align:center;mso-pagination:widow-orphan"><span lang="EN-GB" style="font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-GB;mso-char-type:
+symbol;mso-symbol-font-family:Symbol"><span style="mso-char-type:symbol;
+mso-symbol-font-family:Symbol">t</span></span><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">12 </span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">= <span class="GramE"><i style="mso-bidi-font-style:
+normal">P</i><b style="mso-bidi-font-weight:normal">s</b><sub>1</sub><b style="mso-bidi-font-weight:normal">s</b><sub>2 </sub>,</span> </span><span lang="EN-GB" style="font-family:Symbol;mso-ascii-font-family:&quot;Times New Roman&quot;;
+mso-hansi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-GB;mso-char-type:
+symbol;mso-symbol-font-family:Symbol"><span style="mso-char-type:symbol;
+mso-symbol-font-family:Symbol">t</span></span><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">13 </span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">= <i style="mso-bidi-font-style:normal">P</i><b style="mso-bidi-font-weight:normal">s</b><sub>1</sub><b style="mso-bidi-font-weight:
+normal">s</b><sub>3 </sub>,. </span><span lang="EN-GB" style="font-family:Symbol;
+mso-ascii-font-family:&quot;Times New Roman&quot;;mso-hansi-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-GB;mso-char-type:symbol;mso-symbol-font-family:Symbol"><span style="mso-char-type:symbol;mso-symbol-font-family:Symbol">t</span></span><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">23 </span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">= <span class="GramE"><i style="mso-bidi-font-style:
+normal">P</i><b style="mso-bidi-font-weight:normal">s</b><sub>2</sub><b style="mso-bidi-font-weight:normal">s</b><sub>3 </sub>.</span><o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:19.2pt;text-indent:-19.2pt;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Second mixed
+partial derivatives of the solid cell point function denoted <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:19.2pt;text-indent:-19.2pt;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:266.25pt;height:33pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="solid4.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img width="355" height="44" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image004.gif" v:shapes="_x0000_i1026"><!--[endif]--></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1286601973">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:.45pt;text-align:justify;text-indent:
+-.45pt;mso-pagination:widow-orphan"><span class="GramE"><span lang="EN-GB" style="mso-ansi-language:EN-GB">determine</span></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> twist vectors<span style="mso-spacerun:yes"> 
+</span><span class="SpellE"><b style="mso-bidi-font-weight:normal">s</b><i style="mso-bidi-font-style:normal"><sub>ij</sub></i></span>(<i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>,
+<i style="mso-bidi-font-style:normal">c</i>), <span class="SpellE"><i style="mso-bidi-font-style:normal">i</i></span><i style="mso-bidi-font-style:
+normal"> </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">1, 2, <i style="mso-bidi-font-style:normal"><span style="mso-spacerun:yes"> </span>j </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">= </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">2, 3, <span class="SpellE"><i style="mso-bidi-font-style:normal">i</i></span><i style="mso-bidi-font-style:
+normal"> </i></span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">&#185;</span><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB"> j</span></i><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">, to the solid cell <span class="SpellE">iso</span>-parametric surface
+patches in the solid cell regular point <i style="mso-bidi-font-style:normal">P</i>.<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:.45pt;text-align:justify;text-indent:
+-.45pt;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:.45pt;text-align:justify;text-indent:
+-.45pt;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:.45pt;text-align:justify;text-indent:
+-.45pt;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:.45pt;text-align:justify;text-indent:
+-.45pt;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:.45pt;text-align:justify;text-indent:
+-.45pt;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">The third mixed triple partial derivative of the solid cell point
+function denoted <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:19.2pt;text-indent:-19.2pt;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:152.25pt;height:33pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="solid4.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><!--[if !vml]--><img width="203" height="44" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image006.gif" v:shapes="_x0000_i1027"><!--[endif]--></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1286601974">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:19.2pt;text-indent:-19.2pt;mso-pagination:
+widow-orphan"><span class="GramE"><span lang="EN-GB" style="mso-ansi-language:EN-GB">determines</span></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> the solid cell density vector <b style="mso-bidi-font-weight:normal">s</b><sub>123</sub>(<i style="mso-bidi-font-style:
+normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>, <i style="mso-bidi-font-style:normal">c</i>) in the solid regular point <i style="mso-bidi-font-style:normal">P</i>. <o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:19.2pt;text-align:center;
+text-indent:-19.2pt;mso-pagination:widow-orphan"><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="_x0000_s1042" type="#_x0000_t75" style='position:absolute;left:0;
+  text-align:left;margin-left:13.25pt;margin-top:0;width:390.15pt;height:265.9pt;
+  z-index:1'>
+  <v:imagedata src="solid4.files/image007.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="AmiProDocument"
+  ShapeID="_x0000_s1042" DrawAspect="Content" ObjectID="_1286601975">
+ </o:OLEObject>
+ <![endif]><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+ <table cellpadding="0" cellspacing="0" align="center">
+  <tbody><tr>
+   <td width="18" height="0"></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td valign="Middle"><p align="center"><img width="520" height="355" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image008.jpg" v:shapes="_x0000_s1042"></p></td>
+  </tr>
+ </tbody></table>
+ </span><!--[endif]--><!--[if gte vml 1]></o:wrapblock><![endif]--><br style="mso-ignore:vglayout" clear="ALL">
+<span lang="EN-GB" style="mso-ansi-language:EN-GB">Fig. 1<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:19.2pt;text-align:center;
+text-indent:-19.2pt;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:19.2pt;text-indent:-19.2pt;mso-pagination:
+widow-orphan"><b style="mso-bidi-font-weight:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">2. <span class="SpellE">B&#232;zier</span>
+solid cells<o:p></o:p></span></b></p>
+
+<p class="WPBullets" style="margin-left:19.2pt;text-indent:-19.2pt;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Approximation <span class="SpellE">B&#232;zier</span> tri-cubic solid cell is determined by the
+ordered basic grid of 64 real points in the space. Map of the basic figure is
+the matrix M<sub>4x4x4 </sub>with elements in the homogeneous co-ordinates of
+points in the basic grid<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span lang="PL" style="mso-ansi-language:PL">M<sub>4x4x4</sub>
+= (<i style="mso-bidi-font-style:normal"><sup>ijk</sup>P</i>),<span style="mso-spacerun:yes">  </span><i style="mso-bidi-font-style:normal">i</i>,<i style="mso-bidi-font-style:normal"> j</i>, <i style="mso-bidi-font-style:normal">k</i>
+= 0, 1, 2, 3.<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Tri-cubic
+approximation is determined by Bernstein polynomials for </span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a </span><span lang="EN-GB" style="mso-ansi-language:EN-GB">= 1, 2, 3<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Be</span></i><sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">0</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)=(1 -<i style="mso-bidi-font-style:
+normal"> u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;
+mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">)<sup>3 </sup><i style="mso-bidi-font-style:normal"><span style="mso-spacerun:yes">      </span>Be</i><sub>1</sub>(<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)<i style="mso-bidi-font-style:normal">=</i>3<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">(1 -<i style="mso-bidi-font-style:
+normal"> u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;
+mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">)<sup>2 </sup><i style="mso-bidi-font-style:normal"><span style="mso-spacerun:yes">      </span>Be</i><sub>2</sub>(<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)<i style="mso-bidi-font-style:normal">=</i>3<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">2</span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">(1 <i style="mso-bidi-font-style:normal">- u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)<i style="mso-bidi-font-style:normal"><span style="mso-spacerun:yes">      </span>Be</i><sub>3</sub>(<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)<i style="mso-bidi-font-style:normal">=u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">3</span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+<p class="WPBullets" style="mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span class="GramE"><span lang="EN-GB" style="mso-ansi-language:EN-GB">and</span></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> interpolation matrices are in the
+form<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><sup><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sup><span class="GramE"><span lang="EN-GB" style="mso-ansi-language:EN-GB">I(</span></span><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">u</span></i><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">) = (<i style="mso-bidi-font-style:normal">Be</i><sub>0</sub>(<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">), <i style="mso-bidi-font-style:normal">Be</i><sub>1</sub>(<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">), <i style="mso-bidi-font-style:normal">Be</i><sub>2</sub>(<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">), <i style="mso-bidi-font-style:normal">Be</i><sub>3</sub>(<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)),<span style="mso-spacerun:yes">  </span></span><span lang="EN-GB" style="font-family:
+Symbol;mso-ansi-language:EN-GB">a</span><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">=1, 2, 3.<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Modelled <span class="SpellE">B&#232;zier</span> cell has vertices in the vertices of the
+basic grid, while no other point of the basic figure is located in the cell.
+Point function of the cell is in the form <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span class="GramE"><b style="mso-bidi-font-weight:
+normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">s</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB">(</span></span><i style="mso-bidi-font-style:
+normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">u</span></i><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">1</span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">, <i style="mso-bidi-font-style:normal">u</i><sup>2</sup>,
+<i style="mso-bidi-font-style:normal">u</i><sup>3</sup>) =<sup> 3</sup>I(<i style="mso-bidi-font-style:normal">u</i><sup>3</sup>)<b style="mso-bidi-font-weight:
+normal"> .</b> </span><span lang="PL" style="mso-ansi-language:PL">(<sup>1</sup>I(<i style="mso-bidi-font-style:normal">u</i><sup>1</sup>)<b style="mso-bidi-font-weight:
+normal"> .</b> M<sub>4x4x4</sub> <b style="mso-bidi-font-weight:normal">.</b> <sup>2</sup>I(<i style="mso-bidi-font-style:normal">u</i><sup>2</sup>)<sup>T</sup>)=<i style="mso-bidi-font-style:normal"><sup> ijk</sup>PBe<sub>i</sub>(u</i><sup>1</sup><i style="mso-bidi-font-style:normal">)Be<sub>j</sub>(u</i><sup>2</sup><i style="mso-bidi-font-style:normal">)Be<sub>k</sub>(u</i><sup>3</sup><i style="mso-bidi-font-style:normal">)</i>, <i style="mso-bidi-font-style:normal">i</i>,<i style="mso-bidi-font-style:normal"> j</i>, <i style="mso-bidi-font-style:normal">k
+</i>= 0, 1, 2, 3.<o:p></o:p></span></p>
+
+<p class="WPBullets" style="text-align:justify;mso-pagination:widow-orphan"><span lang="PL" style="font-size:10.0pt;mso-ansi-language:PL"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Density vector <span class="GramE"><b style="mso-bidi-font-weight:normal">s</b><sub>123</sub>(</span><i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>,
+<i style="mso-bidi-font-style:normal">c</i>) in the cell arbitrary point <i style="mso-bidi-font-style:normal">P</i>(<i style="mso-bidi-font-style:normal">a</i>,
+<i style="mso-bidi-font-style:normal">b</i>, <i style="mso-bidi-font-style:
+normal">c</i>), for <i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:normal">b</i>, <i style="mso-bidi-font-style:normal">c</i>
+</span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">Î</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> &lt;0, 1&gt; is determined by
+points of the basic grid and can be calculated from the density function<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;mso-pagination:widow-orphan"><b style="mso-bidi-font-weight:normal"><span lang="PL" style="mso-ansi-language:
+PL">s</span></b><sub><span lang="PL" style="mso-ansi-language:PL">123</span></sub><span lang="PL" style="mso-ansi-language:PL">(<i style="mso-bidi-font-style:normal">u</i><sup>1</sup>,
+<i style="mso-bidi-font-style:normal">u</i><sup>2</sup>, <i style="mso-bidi-font-style:
+normal">u</i><sup>3</sup>) =<sup> 3</sup>I<b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i><sup>3</sup>)<b style="mso-bidi-font-weight:
+normal">.</b>(<sup>1</sup>I<b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i><sup>1</sup>)<b style="mso-bidi-font-weight:
+normal">.</b>M<sub>4x4x4</sub><b style="mso-bidi-font-weight:normal">.</b><sup>2</sup>I<b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i><sup>2</sup>)<sup>
+T</sup>) =<i style="mso-bidi-font-style:normal"><sup> ijk</sup>PBe<sub>i</sub></i><b style="mso-bidi-font-weight:normal">´</b><i style="mso-bidi-font-style:normal">(u</i><sup>1</sup><i style="mso-bidi-font-style:normal">)Be<sub>j</sub></i><b style="mso-bidi-font-weight:
+normal">´</b><i style="mso-bidi-font-style:normal">(u</i><sup>2</sup><i style="mso-bidi-font-style:normal">)Be<sub>k</sub></i><b style="mso-bidi-font-weight:
+normal">´</b><i style="mso-bidi-font-style:normal">(u</i><sup>3</sup><i style="mso-bidi-font-style:normal">)</i>, <i style="mso-bidi-font-style:normal">i</i>,<i style="mso-bidi-font-style:normal"> j</i>, <i style="mso-bidi-font-style:normal">k
+</i>= 0, 1, 2, 3<o:p></o:p></span></p>
+
+<p class="WPBullets" style="mso-pagination:widow-orphan"><span lang="PL" style="font-size:10.0pt;mso-ansi-language:PL"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="text-align:center;mso-pagination:widow-orphan"><sup><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">I<span class="GramE">´(</span><i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)=(<i style="mso-bidi-font-style:
+normal">Be</i><sub>0</sub><b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">), <i style="mso-bidi-font-style:
+normal">Be</i><sub>1</sub><b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">), <i style="mso-bidi-font-style:
+normal">Be</i><sub>2</sub><b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">), <i style="mso-bidi-font-style:
+normal">Be</i><sub>3</sub><b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">))</span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">, a</span><span lang="EN-GB" style="mso-ansi-language:EN-GB">=1, 2, 3<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><i style="mso-bidi-font-style:normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Be</span></i><sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">0</span></sub><b style="mso-bidi-font-weight:
+normal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">´</span></b><span lang="EN-GB" style="mso-ansi-language:EN-GB">(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">) = -3(1 -<i style="mso-bidi-font-style:
+normal"> u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;
+mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:
+EN-GB">)<sup>2</sup>,<span style="mso-spacerun:yes">  </span><i style="mso-bidi-font-style:normal">Be</i><sub>1</sub><b style="mso-bidi-font-weight:
+normal">´</b>(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">) = 3(1-<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a<i style="mso-bidi-font-style:normal"> </i></span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">)(1 -<i style="mso-bidi-font-style:
+normal"> </i>3<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">),<sup><span style="mso-spacerun:yes">  </span></sup><i style="mso-bidi-font-style:normal">Be</i><sub>2</sub><b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">) <i style="mso-bidi-font-style:
+normal">= </i>3<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a<i style="mso-bidi-font-style:normal"> </i></span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">(2 -<i style="mso-bidi-font-style:normal"> </i>3<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">),<sup><span style="mso-spacerun:yes">  </span></sup><i style="mso-bidi-font-style:normal">Be</i><sub>3</sub><b style="mso-bidi-font-weight:normal">´</b>(<i style="mso-bidi-font-style:normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">a</span></sub><span lang="EN-GB" style="mso-ansi-language:EN-GB">) = 6<i style="mso-bidi-font-style:
+normal">u</i></span><sub><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:
+EN-GB">a</span></sub><sup><span lang="EN-GB" style="mso-ansi-language:EN-GB">2</span></sup><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+<p class="WPBullets" style="mso-pagination:widow-orphan"><span lang="EN-GB" style="font-size:10.0pt;mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span class="GramE"><span lang="EN-GB" style="mso-ansi-language:EN-GB">which</span></span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> is the polynomial function of
+degree two in three variables, where <span class="SpellE"><i style="mso-bidi-font-style:
+normal"><sup>ijk</sup>P</i></span><i style="mso-bidi-font-style:normal"> </i>are
+points of the basic grid, elements of the map M<sub>4x4x4</sub>.</span><span lang="CS"> </span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Density vectors
+in the vertices of the <span class="SpellE">B&#232;zier</span> cell (with
+parametric coordinates equal to 0 or 1) are determined with respect to the form
+of the Bernstein polynomials derivatives by 8 interior points of the cell basic
+grid: vertex, its 3 neighbouring points in the directions of parameters <i style="mso-bidi-font-style:normal">u</i><sup>1</sup>, <i style="mso-bidi-font-style:
+normal">u</i><sup>2</sup>, <i style="mso-bidi-font-style:normal">u</i><sup>3</sup>,
+common neighbouring points of these three points in the basic grid, and their
+common neighbour in the grid. Configuration is illustrated for the vertex <sup>000</sup><i style="mso-bidi-font-style:normal">P</i> in Fig. 2. <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Considering
+interior deformations, in which boundary of the cell remains invariant (it
+means shape of the curve-like edges and surface like facets is preserved),
+position of points in the grid influencing form of the boundary must be kept
+unchanged. 8 interior points (one for each vertex) of the basic grid determine
+interior solid cell geometry and density and they form interior density core,
+determined as interior density hypercube illustrated in Fig. 3. <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1044"
+  type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
+  margin-left:250.4pt;margin-top:0;width:225.65pt;height:222.35pt;z-index:3'>
+  <v:imagedata src="solid4.files/image009.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="AmiProDocument"
+  ShapeID="_x0000_s1044" DrawAspect="Content" ObjectID="_1286601976">
+ </o:OLEObject>
+ <![endif]><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+ <table cellpadding="0" cellspacing="0" align="left">
+  <tbody><tr>
+   <td width="334" height="0"></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width="301" height="296" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image010.jpg" v:shapes="_x0000_s1044"></td>
+  </tr>
+ </tbody></table>
+ </span><!--[endif]--><!--[if gte vml 1]></o:wrapblock><![endif]--><br style="mso-ignore:vglayout" clear="ALL">
+<span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1043"
+  type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
+  margin-left:2.75pt;margin-top:0;width:234.45pt;height:149.7pt;z-index:2'>
+  <v:imagedata src="solid4.files/image011.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="AmiProDocument"
+  ShapeID="_x0000_s1043" DrawAspect="Content" ObjectID="_1286601977">
+ </o:OLEObject>
+ <![endif]><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+ <table cellpadding="0" cellspacing="0" align="CENTER">
+  <tbody><tr>
+   <td width="3" height="0"></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><p align="CENTER"><img width="313" height="200" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image012.jpg" v:shapes="_x0000_s1043"></p></td>
+  </tr>
+ </tbody></table>
+ </span><!--[endif]--><!--[if gte vml 1]></o:wrapblock><![endif]--><br style="mso-ignore:vglayout" clear="ALL">
+<span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:
+EN-GB">Fig. 2<span style="mso-spacerun:yes">                                                                          
+</span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Fig. 3<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Density core can
+be deformed arbitrarily (in Fig. 4 vertices of the <span class="SpellE">B&#232;zier</span>
+solid cell and vertices of the interior density hypercube are mapped) to create
+desirable distribution in the net of <span class="SpellE">iso</span>-parametric
+curve segments and surface patches, and to determine the interior density of
+the modelled solid cell and its in-homogenity in this way. <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Density vectors
+can be calculated in an arbitrary solid cell regular point for different
+position of interior density hypercube points, and these can be compared to
+estimate the results of the deformation. Several illustrations of the
+in-homogeneous distribution of the degenerated solid cell interior are given in
+the following, where one face collapses to one edge, while 4 quadruples of the
+solid cell basic grid points coincide as illustrated in Fig. 5,<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><i style="mso-bidi-font-style:normal"><sup><span lang="DA" style="mso-ansi-language:DA">i</span></sup></i><sup><span lang="DA" style="mso-ansi-language:DA">00</span></sup><i style="mso-bidi-font-style:normal"><span lang="DA" style="mso-ansi-language:DA">P = <sup><span style="mso-spacerun:yes"> </span></sup></span></i><sup><span lang="DA" style="mso-ansi-language:DA">000</span></sup><i style="mso-bidi-font-style:
+normal"><span lang="DA" style="mso-ansi-language:DA">P</span></i><span lang="DA" style="mso-ansi-language:DA">, <i style="mso-bidi-font-style:normal"><sup>i</sup></i><sup>01</sup><i style="mso-bidi-font-style:normal">P =<span style="mso-spacerun:yes">  </span></i><sup>001</sup><i style="mso-bidi-font-style:normal">P</i>,<i style="mso-bidi-font-style:normal">
+<sup>i</sup></i><sup>02</sup><i style="mso-bidi-font-style:normal">P = </i><sup>002</sup><i style="mso-bidi-font-style:normal">P</i>,<i style="mso-bidi-font-style:normal">
+<sup>i</sup></i><sup>03</sup><i style="mso-bidi-font-style:normal">P = <sup><span style="mso-spacerun:yes"> </span></sup></i><sup>003</sup><i style="mso-bidi-font-style:
+normal">P</i>, for<span style="mso-spacerun:yes">  </span><i style="mso-bidi-font-style:
+normal">i</i> =<span style="mso-spacerun:yes">  </span>0, 1, 2, 3.<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span lang="DA" style="mso-ansi-language:DA"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="DA" style="mso-ansi-language:DA"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1047"
+  type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
+  margin-left:5pt;margin-top:0;width:450pt;height:201.75pt;z-index:4'>
+  <v:imagedata src="solid4.files/image013.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="AmiProDocument"
+  ShapeID="_x0000_s1047" DrawAspect="Content" ObjectID="_1286601978">
+ </o:OLEObject>
+ <![endif]><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+ <table cellpadding="0" cellspacing="0" align="left">
+  <tbody><tr>
+   <td width="7" height="0"></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width="600" height="269" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image014.jpg" v:shapes="_x0000_s1047"></td>
+  </tr>
+ </tbody></table>
+ </span><!--[endif]--><!--[if gte vml 1]></o:wrapblock><![endif]--><br style="mso-ignore:vglayout" clear="ALL">
+<span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><span style="mso-tab-count:1">            </span></span><span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:EN-GB">Fig.
+4<span style="mso-tab-count:6">                                                                </span>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+Fig.5<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">In Fig. 6, all
+vertices of the interior density hypercube are moved within the convex envelope
+of the <span class="SpellE">B&#232;zier</span> solid cell basic grid of 64 real
+points in the matrix <span class="GramE">M<sub>4x4x4</sub> .</span> Minor
+deformations of the homogeneous distribution of <span class="SpellE">iso</span>-parametric
+curve segments in the cell can be reached only, in this way. Illustration in
+the upper left corner of the Fig. 6 shows the homogeneous position of the <span class="SpellE">iso</span>-parametric net of curve segments in the cell.
+Deformation in the direction of the parameter <i style="mso-bidi-font-style:
+normal">u</i><sup>1</sup> is performed by moving the vertices of the interior
+density hypercube towards the vertices of the <span class="SpellE">the</span> <span class="SpellE">B&#232;zier</span> solid cell basic grid (model in upper right
+corner of the Fig. 6). The first curvature of <i style="mso-bidi-font-style:
+normal">u</i><sup>3</sup>-parametric curve segments determined by point
+functions<i style="mso-bidi-font-style:normal"> </i><b style="mso-bidi-font-weight:
+normal">s</b>(<i style="mso-bidi-font-style:normal">a</i>, <i style="mso-bidi-font-style:
+normal">b</i>,<i style="mso-bidi-font-style:normal"> u</i><sup>3</sup>), <i style="mso-bidi-font-style:normal">u</i><sup>3</sup> </span><span lang="EN-GB" style="font-family:Symbol;mso-ansi-language:EN-GB">Î</span><span lang="EN-GB" style="mso-ansi-language:EN-GB"> &lt;0, 1&gt; can be influenced by the singular
+position of the interior density hypercube vertices in the vertices of the <span class="SpellE">B&#232;zier</span> solid cell basic grid, as seen on models in
+the bottom left and right corners of the Fig. 6. <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">In Fig. 7,
+vertices of the interior density hypercube are moved outside the convex
+envelope of the <span class="SpellE">B&#232;zier</span> solid cell basic grid
+of 64 real points in the matrix M<sub>4x4x4</sub>. Their position is extremely
+distant from the vertices of the <span class="SpellE">B&#232;zier</span> solid
+cell basic grid, but the situation in the upper left corner of the Fig. 7 seems
+to be very homogeneous, either. This is the result of the symmetric position of
+the transformed interior density hypercube vertices with respect to the
+vertices of the deformed <span class="SpellE">B&#232;zier</span> solid cell.
+Model in the bottom left corner of the Fig. 7 was created by moving the
+interior density hypercube vertices extremely far in the direction of the
+parameter <i style="mso-bidi-font-style:normal">u</i><sup>1</sup>, while in the
+model in the bottom right corner of the Fig 7 they are located in the similar
+position but in the direction of the parameter <i style="mso-bidi-font-style:
+normal">u</i><sup>2</sup>. <o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+margin-left:0cm;margin-bottom:.0001pt;text-align:justify;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB">Extreme in-homogeneity of the
+distribution of <span class="SpellE">iso</span>-parametric curve segments in the
+cell can be modelled, when the interior density hypercube vertices of the same
+face are moved in the opposite directions and to the different distances.
+Interior holes, bubbles and new edges can be created by this deformation,
+influencing meaningfully the first curvature of the solid cell <span class="SpellE">iso</span>-parametric curve segments with respect to the expecting
+results of the performed deformation, as shown in Fig. 8. Model in the bottom
+left corner looks homogeneously either, because of the symmetric position of
+the interior density hypercube vertices moved outside the <span class="SpellE">B&#232;zier</span>
+solid cell basic grid, thought to the extreme distance and in the opposite
+directions of the separate parameters.<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;text-align:justify;mso-pagination:
+widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1058"
+  type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
+  margin-left:93.55pt;margin-top:0;width:270.85pt;height:204.45pt;z-index:7'
+  o:allowoverlap="f">
+  <v:imagedata src="solid4.files/image015.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="PBrush"
+  ShapeID="_x0000_s1058" DrawAspect="Content" ObjectID="_1286601979">
+ </o:OLEObject>
+ <![endif]><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+ <table cellpadding="0" cellspacing="0">
+  <tbody><tr>
+   <td width="125" height="0"></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width="361" height="273" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image016.gif" v:shapes="_x0000_s1058"></td>
+  </tr>
+ </tbody></table>
+ </span><!--[endif]--><!--[if gte vml 1]></o:wrapblock><![endif]--><br style="mso-ignore:vglayout" clear="ALL">
+<span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:
+EN-GB">Fig. 6<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1055"
+  type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
+  margin-left:67.65pt;margin-top:0;width:333.85pt;height:208.15pt;z-index:5'>
+  <v:imagedata src="solid4.files/image017.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="AmiProDocument"
+  ShapeID="_x0000_s1055" DrawAspect="Content" ObjectID="_1286601980">
+ </o:OLEObject>
+ <![endif]><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+ <table cellpadding="0" cellspacing="0">
+  <tbody><tr>
+   <td width="90" height="0"></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width="445" height="278" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image018.jpg" v:shapes="_x0000_s1055"></td>
+  </tr>
+ </tbody></table>
+ </span><!--[endif]--><!--[if gte vml 1]></o:wrapblock><![endif]--><br style="mso-ignore:vglayout" clear="ALL">
+<span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:
+EN-GB">Fig. 7<o:p></o:p></span></p>
+
+<p class="WPBullets" align="center" style="margin-left:0cm;text-align:center;
+mso-pagination:widow-orphan"><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1057"
+  type="#_x0000_t75" style='position:absolute;left:0;text-align:left;
+  margin-left:79.55pt;margin-top:0;width:276.35pt;height:199.9pt;z-index:6'>
+  <v:imagedata src="solid4.files/image019.png" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="PBrush"
+  ShapeID="_x0000_s1057" DrawAspect="Content" ObjectID="_1286601981">
+ </o:OLEObject>
+ <![endif]><![endif]--><!--[if !vml]--><span style="mso-ignore:vglayout">
+ <table cellpadding="0" cellspacing="0">
+  <tbody><tr>
+   <td width="106" height="0"></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width="368" height="267" src="./Velichova, Daniela Solid 4 (MODELLING OF SOLID INTERIOR)_files/image020.gif" v:shapes="_x0000_s1057"></td>
+  </tr>
+ </tbody></table>
+ </span><!--[endif]--><!--[if gte vml 1]></o:wrapblock><![endif]--><br style="mso-ignore:vglayout" clear="ALL">
+<span lang="EN-GB" style="font-size:11.0pt;mso-bidi-font-size:10.0pt;mso-ansi-language:
+EN-GB">Fig. 8<o:p></o:p></span></p>
+
+<p class="WPBullets" style="margin-left:0cm;mso-pagination:widow-orphan"><span lang="EN-GB" style="mso-ansi-language:EN-GB"><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>

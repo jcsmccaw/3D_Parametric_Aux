@@ -1,0 +1,166 @@
+
+<!-- saved from url=(0053)http://www.evlm.stuba.sk/databasemenu/Geometry/solid2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+
+<meta name="Generator" content="Microsoft Word 97">
+<title>Bezier solid cells</title>
+</head>
+<body link="#0000ff" bgcolor="#EBEBFF">
+<font face="Arial" size="6" color="#8C0046">
+<b><p align="CENTER">IN-HOMOGENEOUS B&#200;ZIER SOLID CELLS </p></b></font><b>
+</b><p align="CENTER"></p>
+<br>
+<dir>
+<font face="Arial" size="4" color="#8C0046">
+<p><b>Basic notions</b></p></font>
+
+<p align="JUSTIFY">Basic figure - ordered  grid of 64 real points 
+</p><p align="JUSTIFY"></p>
+<p align="CENTER">M<sub>4x4x4</sub> = (<i><sup>ijk</sup>P</i>),  <i>i</i>,<i> j</i>, <i>k</i> = 0, 1, 2, 3 </p>
+<p align="CENTER"></p><br><br>
+
+
+<p align="JUSTIFY">Tri-cubic approximation -  interpolation matrices</p>
+<font size="1"><p align="JUSTIFY"></p></font><dir><font size="1">
+
+</font><sup><font face="Symbol"></font><p align="CENTER"><font face="Symbol">a</font>I(<i>u</i><sub><font face="Symbol">a</font></sub>) = (<i>Be</i><sub>0</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>), <i>Be</i><sub>1</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>), <i>Be</i><sub>2</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>), <i>Be</i><sub>3</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>)),  <font face="Symbol">a</font>=1, 2, 3</p>
+<font size="1"><p align="JUSTIFY"></p></font></sup></dir><font size="1">
+
+</font><p align="JUSTIFY">determined by Bernstein polynomials for <font face="Symbol">a </font>= 1, 2, 3 , where</p>
+<font size="1"><p align="JUSTIFY"></p>
+</font><i></i><p align="CENTER"><i>Be</i><sub>0</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>)=(1 -<i> u</i><sub><font face="Symbol">a</font></sub>)<sup>3</sup> ,<i>      Be</i><sub>1</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>)<i>=</i>3<i>u</i><sub><font face="Symbol">a</font></sub>(1 -<i> u</i><sub><font face="Symbol">a</font></sub>)<sup>2</sup> ,<i>      Be</i><sub>2</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>)<i>=</i>3<i>u</i><sub><font face="Symbol">a</font></sub><sup>2</sup>(1 <i>- u</i><sub><font face="Symbol">a</font></sub>)<i> </i>,<i>     Be</i><sub>3</sub>(<i>u</i><sub><font face="Symbol">a</font></sub>)<i>=u</i><sub><font face="Symbol">a</font></sub><sup>3 </sup> </p><br>
+<br>
+
+<p align="JUSTIFY">B&#232;zier cell point function on <font face="Symbol">W = &lt;0, 1&gt;<sup>2</sup></font></p>
+<b></b><p align="CENTER"><b>s</b>(<i>u</i><sub>1</sub>, <i>u</i><sub>2</sub>, <i>u</i><sub>3</sub>) = <sup>3</sup>I(<i>u</i><sub>3</sub>)<b> .</b> (<sup>1</sup>I(<i>u</i><sub>1</sub>)<b> .</b> M<sub>4x4x4</sub> <b>.</b> <sup>2</sup>I(<i>u</i><sub>2</sub>)<sup>T</sup>)=<i> <sup>ijk</sup>PBe<sub>i</sub></i>(<i>u</i><sub>1</sub>)<i>Be<sub>j</sub></i>(<i>u</i><sub>2</sub>)<i>Be<sub>k</sub></i>(<i>u</i><sub>3</sub>),     <i>i</i>,<i> j</i>, <i>k </i>= 0, 1, 2, 3</p>
+<font size="1"><p align="JUSTIFY"></p><br>
+<br>
+<br>
+<br>
+<br>
+</font><p align="JUSTIFY"><b>Density vector</b> in the cell arbitrary point <i>P</i>(<i>a</i>, <i>b</i>, <i>c</i>), for <i>a</i>, <i>b</i>, <i>c</i> <font face="Symbol">Î</font> <font face="Symbol">á</font>
+0, 1<font face="Symbol">&#241;</font><br>
+<br>
+ can be calculated from the density function</p>
+<p align="JUSTIFY"></p><br>
+
+<b></b><p><b>s</b><sub>123</sub>(<i>u</i><sub>1</sub>, <i>u</i><sub>2</sub>, <i>u</i><sub>3</sub>) = <sup>3</sup>I<font face="Arial">'</font>(<i>u</i><sub>3</sub>)<b>.</b>(<sup>1</sup>I<font face="Arial">'</font>(<i>u</i><sub>1</sub>)<b>.</b>M<sub>4x4x4</sub><b>.</b><sup>2</sup>I<font face="Arial">'</font>(<i>u</i><sub>2</sub>)<sup> T</sup>) =<i> <sup>ijk</sup>PBe<sub>i</sub></i><font face="Arial">'</font>(<i>u</i><sub>1</sub>)<i>Be<sub>j</sub></i><font face="Arial">'</font>(<i>u</i><sub>2</sub>)<i>Be<sub>k</sub></i><font face="Arial">'</font>(<i>u</i><sub>3</sub>),    <i>i</i>,<i> j</i>, <i>k </i>= 0, 1, 2, 3</p><br>
+
+<dir>
+
+<sup><font face="Symbol"></font><p align="CENTER"><font face="Symbol">a</font>I<font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>)=(<i>Be</i><sub>0</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>), <i>Be</i><sub>1</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>), <i>Be</i><sub>2</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>), <i>Be</i><sub>3</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>))<font face="Symbol">,   a </font>= 1, 2, 3</p>
+<font size="1"></font></sup></dir><font size="1"><br>
+
+</font><i></i><p align="CENTER"><i>Be</i><sub>0</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>) = -3(1 -<i> u</i><sub><font face="Symbol">a</font></sub>)<sup>2</sup>,  <i>Be</i><sub>1</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>) = 3(1-<i>u</i><sub><font face="Symbol">a</font></sub><font face="Symbol"><i> </i></font>)(1 -<i> </i>3<i>u</i><sub><font face="Symbol">a</font></sub>),  <i>Be</i><sub>2</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>) <i>= </i>3<i>u</i><sub><font face="Symbol">a</font></sub><font face="Symbol"><i> </i></font>(2 -<i> </i>3<i>u</i><sub><font face="Symbol">a</font></sub>),  <i>Be</i><sub>3</sub><font face="Arial">'</font>(<i>u</i><sub><font face="Symbol">a</font></sub>) = 6<i>u</i><sub><font face="Symbol">a</font></sub><sup>2</sup></p>
+<p align="JUSTIFY"></p><br>
+<br><br>
+<br>
+<font face="Arial" size="4" color="#8C0046">
+
+<b><p align="JUSTIFY">Free-form deformations</p><br>
+</b></font><b>
+</b><p align="JUSTIFY">Density vectors in the vertices of the B&#232;zier cell <br>
+(with parametric co-ordinates equal to 0 or 1) <br><br>
+
+
+are determined (with respect to the form of the Bernstein polynomial derivatives)  by <br><br>
+
+<b>8 interior points of the cell basic grid</b> <img src="./VELICHOVÁ Daniela, Solid 2 (bezier solid cells)_files/Image458.gif" width="343" height="219" align="right"><br>
+<br>
+- the entire vertex<br><br>
+<br>
+- its 3 neighbouring points in the direction of parameter <i>u</i><sub>1</sub>, <i>u</i><sub>2</sub>, and <i>u</i><sub>3</sub><br>
+<br><br>
+
+- common neighbouring points of these 3 points<br><br><br>
+
+ - their common neighbour in the grid<br>
+<br><br>
+<br><br>
+
+
+
+</p><p align="JUSTIFY"><img src="./VELICHOVÁ Daniela, Solid 2 (bezier solid cells)_files/inter.gif" width="411" height="405" align="left"></p><dir><br>
+<br>
+
+Considering interior deformations<br><br>
+
+ with invariant boundary of the cell,<br><br>
+ position of points in the grid influencing form of the boundary<br><br>
+
+ must be kept unchanged. <br>
+<br><br>
+8 interior points (one for each vertex) of the basic grid<br><br>
+ determine interior solid cell geometry and density <br><br>
+
+ and they form <b>interior density core</b>. <p></p>
+<p align="CENTER"></p><br>
+<br><br>
+<br>
+<br clear="ALL">
+
+<p align="JUSTIFY"><br>
+<br>
+Density core determined by 16 vertices<br>
+<br>
+ - the <b>interior density hypercube</b> <br>
+<br>
+can be deformed arbitrarily to create desirable distribution <br>
+<br>
+in the net of the modelled solid cell iso-parametric curve segments and surface patches, <br>
+<br>
+and to determine the interior in-homogenity of the created cell. <br>
+<br>
+Density vectors can be calculated in an arbitrary solid cell regular point<br>
+<br>
+ for different position of interior density hypercube vertices, <br>
+<br>
+and these can be compared to estimate the results of the deformation. </p>
+<br>
+<br><img src="./VELICHOVÁ Daniela, Solid 2 (bezier solid cells)_files/hyper.gif" width="901" height="373" align="middle">
+<br clear="ALL">
+
+<p align="JUSTIFY"></p>
+<p align="JUSTIFY">Some illustrations of inhomogeneous distribution of the singular solid cell interior<br>
+<br>
+an <b>inhomogeneous B&#232;zier  cube</b><br>
+<br>
+are given in the following figures.<br>
+<br><br>
+</p><p align="CENTER">
+
+ <img src="./VELICHOVÁ Daniela, Solid 2 (bezier solid cells)_files/fig1.gif" width="434" height="297"></p>
+<p align="CENTER"></p>
+<p align="JUSTIFY">All inner vertices of the interior density hypercube are moved <br>
+within the convex envelope of the B&#232;zier solid cell basic grid. <br><br>
+
+A minor deformation of the homogeneous distribution<br>
+ of iso-parametric curve segments in the cell can be reached only. <br><br>
+The first curvature of iso-parametric curve segments<br>
+ can be influenced by the singular position of the interior density hypercube vertices<br>
+ in the vertices of the B&#232;zier solid cell basic grid.</p><br>
+
+<p align="CENTER"><img src="./VELICHOVÁ Daniela, Solid 2 (bezier solid cells)_files/Image461.gif" width="437" height="305"></p>
+<p align="CENTER">&nbsp;</p>
+Inner vertices of the interior density hypercube are moved<br>
+ outside the convex envelope of the B&#232;zier solid cell basic grid. <br><br>
+
+Their position can be extremely distant from the vertices of the B&#232;zier solid cell basic grid,<br>
+ but the situation in the right bottom corner seems to be very homogeneous, either. <br><br>
+
+This is the result of the symmetric position of the transformed inner density hypercube vertices<br>
+ with respect to the vertices of the B&#232;zier solid cell. <p></p><br>
+
+<p align="CENTER"><img src="./VELICHOVÁ Daniela, Solid 2 (bezier solid cells)_files/Image462.gif" width="432" height="296"></p>
+<b><p align="JUSTIFY">&nbsp;</p></b>
+<p align="JUSTIFY">Extreme in-homogeneity of the distribution of iso-parametric curve segments in the cell can be modelled,<br>
+ when the inner density hypercube vertices of the same facet are moved<br>
+ in the opposite directions and to the different distances.<br>
+<br>
+ Interior holes, bubbles and new edges can be created by this deformation,<br>
+ influencing meaningfully the first curvature of the solid cell iso-parametric curve segments<br>
+ with respect to the expecting results of the performed deformation.</p>
+<b><p align="JUSTIFY">&nbsp;</p>
+
+
+</b></dir></dir></body></html>
